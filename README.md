@@ -1,5 +1,5 @@
 # spfdmarc-checker
-A script to analyze a domain's MX, SPF, and DMARC records, providing a detailed report, highlighting potential security issues, and suggesting improvements.
+A script to analyze a domain's MX, SPF, DMARC and DKIM records, providing a detailed report, highlighting potential security issues, and suggesting improvements.
 
 ![image](https://raw.githubusercontent.com/pandawa3/spfdmarc-checker/refs/heads/main/images/example.png)
 
@@ -42,6 +42,7 @@ Options:
   --dmarc              [✓] Only analyze DMARC record
   --dkim               [✓] Only analyze DKIM record
   -s, --selector SEL   Test a specific DKIM selector
+  --dns 8.8.8.8        Perform DNS resolutions with custom DNS server (default: 8.8.8.8)
   -q, --quiet          Hide header
 
 Description:
@@ -60,4 +61,5 @@ Symbols:
   [✓] Success / Found
   [!!] Warning / Partial
   [✗] Error / Missing / Dangerous
+
 ```
